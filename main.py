@@ -1,7 +1,8 @@
 # This is a sample Python script.
 from environs import Env
+import volumes
 env = Env()
-env.read_env()
+env.read_env('volumes/.env')
 code1: str = env('my_test_code')
 
 
