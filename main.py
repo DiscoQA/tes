@@ -1,4 +1,6 @@
 # This is a sample Python script.
+import time
+
 from environs import Env
 import volumes
 env = Env()
@@ -13,6 +15,11 @@ code1: str = env('my_test_code')
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'pidooor, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    a = 0
+    while a < 5:
+        print('zzz')
+        time.sleep(60)
+        a=a+1
     print (code1)
 
 # Press the green button in the gutter to run the script.
